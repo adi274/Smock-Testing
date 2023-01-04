@@ -35,4 +35,12 @@ contract Lock {
     function claim(uint256 _epoch, bytes32 _batchMerkleRoot) external payable {
         
     }
+
+    function verifyAndRelayMessage(
+        uint256 _epoch,
+        bytes32[] calldata _proof,
+        bytes calldata _message
+    ) external pure returns(uint256) {
+        return 1;
+    }
 }
